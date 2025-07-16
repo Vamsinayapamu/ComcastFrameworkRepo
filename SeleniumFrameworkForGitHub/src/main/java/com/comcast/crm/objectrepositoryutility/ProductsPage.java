@@ -16,11 +16,19 @@ public class ProductsPage {
 	}
 	
 	//driver.findElement(By.xpath("//img[@alt='Create Product...']")).click();
-	@FindBy(xpath="//img[@alt='Create Product...']") WebElement productLink;
+	@FindBy(xpath="//img[@alt='Create Product...']") private WebElement productLink;
+	@FindBy(name="search") private WebElement search;
+	
 	public WebElement getproductLink()
 	{
 		return productLink;
 	}
+	public WebElement getsearch()
+	{
+		return search;
+	}
+	
+	
 	
 	
 	
